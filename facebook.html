@@ -6,15 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- External css -->
+    <!-- import css file -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/image.css">
+
+    <!-- internal css -->
+    <style></style>
   </head>
 
-  <body>
+  <body id="body-styles">
 
     <main style="width: 500px; margin-left: auto; margin-right: auto; margin-bottom: 20px;">
-      <h1 style=" text-align: center;">Facebook Card Layout</h1>
+      <h1 style="text-align: center;">Facebook Card Layout</h1>
 
       <!-- css flexbox -->
-      <div style="display: flex;">
+      <div class="display-flex margin-top-2 margin-bottom-2">
         <img src="images/avatar.png" alt="avatar" height="64">
         <div>
           <!-- inline-styling -->
@@ -23,7 +34,7 @@
         </div>
       </div>
 
-      <img src="images/meme.png" alt="meme" width="512" style="display: block;">
+      <img src="images/meme.png" alt="meme" id="image-style">
 
       <div style="display: flex; justify-content: space-between; margin-top: 15px;">
         <div>
@@ -43,9 +54,9 @@
       <hr>
 
       <div style="display: flex; justify-content: space-around;">
-        <p style="margin-top: 0px; margin-bottom: 0px;">Like</p>
-        <p style="margin-top: 0px; margin-bottom: 0px;">Comment</p>
-        <p style="margin-top: 0px; margin-bottom: 0px;">Share</p>
+        <p class="margin-top-and-bottom">Like</p>
+        <p class="margin-top-and-bottom">Comment</p>
+        <p class="margin-top-and-bottom">Share</p>
       </div>
 
     </main>

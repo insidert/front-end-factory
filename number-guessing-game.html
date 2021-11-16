@@ -11,29 +11,70 @@
     <title>Number Guessing Game</title>
   </head>
   <body>
-    <!-- <div class="container mt-5">
-      <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4">
-          <h4>Number Guessing Game</h4>
-        </div>
-        <div class="col-4"></div>
-      </div>
-    </div> -->
-
     <div class="container mt-5">
       <div class="row">
         <div class="col-4 mx-auto">
           <h4 class="text-center bg-primary text-white mb-5 py-4">Number Guessing Game</h4>
 
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Your Input</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Give any number from 1 to 100">
+            <label for="userInputNumber" class="form-label">Your Input</label>
+
+            <input type="text" class="form-control" id="userInputNumber" placeholder="Give any number from 1 to 100">
           </div>
 
-          <button type="button" class="btn btn-secondary">Submit Input</button>
+          <button type="button" class="btn btn-secondary" id="submitButton">Submit Input</button>
+
+          <div class="alert alert-success mt-4" id="successMessageBlock" role="alert" style="display: none;">
+            You have gussed correctly.
+          </div>
         </div>
       </div>
     </div>
+
+    <script>
+      console.log('Hello!, Degubbing started!');
+
+      // our program should decide/fix on a number.
+      var programNumber = 20;
+
+      // when the submit button is clicked, we need to fetch the user input value.
+      // click event
+      // Querying using the selector
+      var submitButtonElement = document.getElementById('submitButton');
+
+      console.log(submitButtonElement);
+
+      submitButtonElement.addEventListener("click", function () {
+        // we need to fetch the user input value.
+        console.log('Submit button has been clicked.');
+
+        var userFormInput = document.getElementById('userInputNumber');
+
+        console.log(userFormInput);
+
+        var userFormInputValue = userFormInput.value;
+
+        console.log('User from input value: ', userFormInputValue);
+
+        // check whether the user input is equal to our program's number
+        // if the number guessed is correct, show the message that the user wins.
+
+        if (userFormInputValue == programNumber) {
+          console.log('You have guessed correctly.');
+
+          var successMessageElement = document.getElementById('successMessageBlock');
+
+          console.log(successMessageElement);
+
+          successMessageElement.style.display = "block";
+        }
+        
+        // if the number gusessed is wrong and is less than program's number, give a hint
+
+        // if the number gusessed is wrong and is greater than program's number, give a hint
+
+      // rule, the user should guess within 10 tries.
+      });
+    </script>
   </body>
 </html>

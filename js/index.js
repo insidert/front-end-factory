@@ -43,6 +43,11 @@ function processUserGuess() {
 
   var userFormInputValue = userFormInput.value;
 
+  if (userFormInputValue == '') {
+    alert('Input cannot be empty. Give a value.');
+    return;
+  }
+
   // convert string to intergers
   // userFormInputValue = parseInt(userFormInputValue);
   // console.log('Type of the input is: ', typeof userFormInputValue);
@@ -58,11 +63,6 @@ function processUserGuess() {
   // }
 
   console.log('User from input value: ', userFormInputValue);
-
-  if (userFormInputValue == '') {
-    alert('Input cannot be empty. Give a value.');
-    return;
-  }
 
   // Update user input value on the list
   var userInputListElement = document.getElementById('userInputListElement');

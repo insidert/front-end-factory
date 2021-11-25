@@ -54,12 +54,30 @@ let phoneNumber = '+919876543210';
 
 displaySentence(phoneNumber);
 
-let formattePhoneNumber = phoneNumber.substring(3, 13);
+let formattePhoneNumber = formatPhoneNumber(phoneNumber);
+
+displaySentence(formattePhoneNumber);
+
+phoneNumber = '9999988888';
+
+displaySentence(phoneNumber);
+
+formattePhoneNumber = formatPhoneNumber(phoneNumber);
+
+displaySentence(formattePhoneNumber);
+
+function formatPhoneNumber(phoneNumber) {
+  if (phoneNumber.length == 10) {
+    return phoneNumber;
+  }
+
+  return phoneNumber.substring(3, 13);
+}
 
 displaySentence(formattePhoneNumber);
 
 function displaySentence(theSentence) {
-  console.log(theSentence);
+  console.log('Sentence: ', theSentence);
 }
 
 function displaySplitSentenceAndArray(theSentence, theArray) {

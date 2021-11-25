@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selector</title>
+  <style>
+    .color-green {
+      color: green;
+    }
+
+    p, h5 {
+      color: red;
+    }
+
+    h3 {
+      color: blue;
+    }
+
+    div > p {
+      color: grey;
+    }
+
+    .purple > p {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+    <p>Hello</p>
+    <p>There!</p>
+    <h3>Hey</h3>
+    <h5>HTML</h5>
+    <p>Another paragraph tag</p>
+    <p class="color-green" style="color: orange;">P tag using class.</p>
+
+    <div>
+      <h3>Div heading</h3>
+      <p>Div paragraph</p>
+    </div>
+
+    <div>
+      <p>Div paragraph</p>
+    </div>
+
+    <div class="purple">
+      <p>Div paragraph</p>
+    </div>
+</body>
+</html>

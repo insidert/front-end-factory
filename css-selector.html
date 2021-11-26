@@ -25,6 +25,26 @@
     .purple > p {
       color: purple;
     }
+
+    /* unvisited link */
+    a:link {
+      color: hotpink;
+    }
+
+    /* visited link */
+    a:visited {
+      color: green;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: blue;
+    }
+
+    /* selected link */
+    a:active {
+      color: hotpink;
+    }
   </style>
 </head>
 <body>
@@ -47,5 +67,16 @@
     <div class="purple">
       <p>Div paragraph</p>
     </div>
+
+    <p style="padding: 20px; border: 5px solid red; margin: 30px;">The box content</p>
+
+    <a href="#">I am the link</a>
+
+    <!-- em -->
+    <!-- rem -->
+
+    <p style="padding: 2rem; border: 4rem solid red; margin: 3rem;">The box content</p>
+
+    <p style="padding: 2em; border: 4em solid red; margin: 3em;">The box content</p>
 </body>
 </html>

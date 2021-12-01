@@ -1,0 +1,25 @@
+/* css class */ 
+.margin-top-and-bottom {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #40158C;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.margin-top-2 {
+  margin-top: 20px;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 20px;
+}
+
+/* CSS ID */
+#body-styles {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f3f3;
+}
+/*# sourceMappingURL=facebook.7afdcd3f.css.map */
